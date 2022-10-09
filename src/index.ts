@@ -1,17 +1,13 @@
-let a = 100;
-let b = "Coffee";
-let c = [true, false, false];
-let d = { age: number };
-let e = [3];
-let f;
-let g = [];
+type Employee = {
+  readonly id: number;
+  name: string;
+  retire: (date: Date) => void;
+};
 
-let song: {
-  title: string;
-  releaseYear?: number;
-} = { title: "My song" };
-
-let prices = [100, 200, 300];
-prices[0] = 10;
-
-function myFunc(a: number, b: number): void {}
+let employee: Employee = {
+  id: 1,
+  name: "Mosh",
+  retire: (date: Date) => {
+    console.log(date);
+  },
+};
