@@ -1,3 +1,3 @@
-let phone = <HTMLInputElement>document.getElementById("phone");
-
-phone.value;
+function render(document: unknown) {
+  document.move(), document.fly(), document.whateverwewant();
+}
