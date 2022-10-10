@@ -1,3 +1,13 @@
-function render(document: unknown) {
-  document.move(), document.fly(), document.whateverwewant();
+function reject(message: string): never {
+  throw new Error(message);
 }
+
+function processEvents(): never {
+  while (true) {
+    // Do something
+  }
+}
+
+//processEvents();
+reject("Error");
+console.log("Hello World");
