@@ -1,24 +1,8 @@
-class Account {
-  nickname?: string;
-
-  constructor(
-    public readonly id: number,
-    public owner: string,
-    private _balance: number
-  ) {}
-
-  deposit(amount: number): void {
-    if (amount <= 0) throw new Error("Invalid amount");
-    this._balance += amount;
-  }
-
-  private calculateTax(): void {}
-
-  get balance(): number {
-    return this._balance;
-  }
+class SeatAssignment {
+  // Index signature property
+  [seatNumber: string]: string;
 }
 
-let account = new Account(1, "Mosh", 0);
-account.deposit(100);
-console.log(account);
+let seats = new SeatAssignment();
+seats.A1 = "Mosh";
+seats.A2 = "John";
