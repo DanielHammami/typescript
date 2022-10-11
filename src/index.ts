@@ -14,7 +14,7 @@ class Account {
 
   private calculateTax(): void {}
 
-  getBalance(): number {
+  get balance(): number {
     return this._balance;
   }
 }
