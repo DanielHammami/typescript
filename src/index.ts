@@ -1,8 +1,8 @@
-class SeatAssignment {
-  // Index signature property
+// Index Signatures
+class SeatAssigement {
   [seatNumber: string]: string;
 }
 
-let seats = new SeatAssignment();
+let seats = new SeatAssigement();
 seats.A1 = "Mosh";
 seats.A2 = "John";
