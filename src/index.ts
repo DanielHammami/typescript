@@ -10,7 +10,7 @@ class Ride {
   }
 }
 
-let ride1 = new Ride();
+let ride1 = new Ride()
 ride1.start();
 
 let ride2 = new Ride();
