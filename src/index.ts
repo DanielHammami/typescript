@@ -5,4 +5,4 @@ class SeatAssigement {
 
 let seats = new SeatAssigement();
 seats.A1 = "Mosh";
-seats.A2 = "John";
+seats.A2 = 1;
